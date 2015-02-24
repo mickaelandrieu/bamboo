@@ -131,6 +131,11 @@ class AppKernel extends Kernel
             new \Elcodi\Plugin\GoogleAnalyticsBundle\ElcodiGoogleAnalyticsBundle(),
             new \Elcodi\Plugin\PinterestBundle\ElcodiPinterestBundle(),
             new \Elcodi\Plugin\ProductCsvBundle\ElcodiProductCsvBundle(),
+
+            /**
+             * Elcodi commons
+             */
+            new \Elcodi\Bundle\FixturesBoosterBundle\ElcodiFixturesBoosterBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

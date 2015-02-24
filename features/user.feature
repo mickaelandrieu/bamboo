@@ -8,7 +8,7 @@ Feature: user
     Given I am on "/user"
     Then I should be on "/login"
 
-  @user @see
+  @user
   Scenario Outline: User should be able to logout
     Given I am logged as <username> - <password>
     Then I should be on "/login"
@@ -18,7 +18,6 @@ Feature: user
     Examples:
       | username                   | password |
       | "noncustomer@customer.com" | "1234"   |
-      | "customer@customer.com"    | "123"    |
 
   @user
   Scenario: Wrong login
